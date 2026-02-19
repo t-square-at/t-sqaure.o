@@ -1,1 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsquare.o - Nigerian Food & Hair Vienna</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>Tsquare<span>.o</span></h1>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#food">Nigerian Food</a></li>
+                <li><a href="#hair">Hair & Wigs</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="tel:+43660123456789" class="phone-btn">
+                    <i class="fas fa-phone-alt"></i>
+                </a>
+                <a href="https://wa.me/43660123456789" class="whatsapp-nav" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <span class="welcome-badge">🇳🇬 Welcome to Vienna 🇦🇹</span>
+            <h1>Tsquare<span>.o</span></h1>
+            <p class="tagline">Authentic Nigerian Cuisine & Premium Hair Extensions</p>
+            <p class="location"><i class="fas fa-map-marker-alt"></i> Vienna, Austria</p>
+            <div class="hero-buttons">
+                <a href="#food" class="btn btn-primary">View Food Menu</a>
+                <a href="#hair" class="btn btn-secondary">Shop Hair</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Authentic Nigerian Food</h3>
+                    <p>Homemade Nigerian dishes made with love and traditional recipes</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-female"></i>
+                    <h3>Premium Hair</h3>
+                    <p>High-quality wigs, braids, and hair extensions</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Delivery Vienna</h3>
+                    <p>Fast delivery across Vienna and surrounding areas</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-euro-sign"></i>
+                    <h3>Best Prices</h3>
+                    <p>Affordable prices with the best quality in Vienna</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Section -->
+    <section id="food" class="food-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Nigerian <span>Food Menu</span></h2>
+                <p>Authentic tastes from home, right here in Vienna</p>
+            </div>
+
+            <div class="food-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="soups">Soups & Swallows</button>
+                <button class="category-btn" data-category="rice">Rice Dishes</button>
+                <button class="category-btn" data-category="protein">Proteins</button>
+                <button class="category-btn" data-category="snacks">Small Chops</button>
+            </div>
+
+            <div class="food-grid">
+                <!-- Soups & Swallows -->
+                <div class="food-item" data-category="soups">
+                    <div class="food-image">
+                        <img src="images/egusi.jpg" alt="Egusi Soup">
+                        <span class="food-badge">Popular</span>
+                    </div>
+                    <div class="food-info">
+                        <h3>Egusi Soup <span class="food-origin">🍲 Nigerian</span></h3>
+                        <p>Ground melon seeds with leafy vegetables, assorted meat, and stockfish</p>
+                        <div class="food-details">
+                            <span class="serving">Serves 1-2</span>
+                            <span class="price">€14.90</span>
+                        </div>
+                        <div class="food-options">
+                            <p class="swallow-options">With: Pounded Yam | Fufu | Semo (+€2)</p>
+                        </div>
+                        <button class="add-to-cart" onclick="orderItem('Egusi Soup', '€14.90')">
+                            <i class="fas fa-shopping-cart"></i> Order
+                        </button>
+                    </div>
+                </div>
+
+                <div class="food-item" data-category="soups">
+                    <div class="food-image">
+                        <img src="images/ogbono.jpg" alt="Ogbono Soup">
+                    </div>
+                    <div class="food-info">
+                        <h3>Ogbono Soup</h3>
+                        <p>Delicious draw soup with assorted meat, fish, and spinach</p>
+                        <div class="food-details">
+                            <span class="serving">Serves 1-2</span>
+                            <span class="price">€13.90</span>
+                        </div>
+                        <div class="food-options">
+                            <p class="swallow-options">With: Pounded Yam | Fufu | Semo (+€2)</p>
+                        </div>
+                        <button class="add-to-cart" onclick="orderItem('Ogbono Soup', '€13.90')">
+                            <i class="fas fa-shopping-cart"></i> Order
+                        </button>
+                    </div>
+                </div>
+
+                <div class="food-item" data-category="soups">
+                    <div class="food-image">
+                        <img src="images/efo-riro.jpg" alt="Efo Riro">
+                    </div>
+                    <div class="food-info">
+                        <h3>Efo Riro</h3>
+                        <p>Rich Yoruba vegetable soup with assorted meat and locust beans</p>
+                        <div class="food-details">
+                            <span class="serving">Serves 1-2</span>
+                            <span class="price">€13.90</span>
+                        </div>
+                        <div class="food-options">
+                            <p class="swallow-options">With: Pounded Yam | Fufu | Semo (+€2)</p>
+                        </div>
+                        <button class="add-to-cart" onclick="orderItem('Efo Riro', '€13.90')">
+                            <i class="fas fa-shopping-cart"></i> Order
+                        </button>
+                    </div>
+                </div>
+
+                <div class="food-item" data-category="soups">
+                    <div class="food-image">
+                        <img src="images/bitterleaf.jpg" alt="Bitterleaf Soup">
+                    </div>
+                    <div class="food-info">
+                        <h3>Bitterleaf Soup (Ofe Onugbu)</h3>
+                        <p>Traditional Igbo soup with assorted meat and cocoyam</p>
+                        <div class="food-details">
+                            <span class="serving">Serves 1-2</span>
+                            <span class="price">€14.90</span>
+                        </div>
+                        <div class="food-options">
+                            <p class="swallow-options">With: Pounded Yam | Fufu | Semo (+€2)</p>
+                        </div>
+                        <button class="add-to-cart" onclick="orderItem('Bitterleaf Soup', '€14.90')">
+                            <i class="fas fa-shopping-cart"></i> Order
+                        </button>
+                    </div>
+                </div>
+
+                <div class="food-item" data-category="soups">
+                    <div class="food-image">
+                        <img src="images/okro.jpg" alt="Okro Soup">
+                    </div>
+                    <div class="food-info">
+                        <h3>Okro Soup</h3>
+                        <p>Fresh okro soup with assorted meat, fish, and periwinkle</p>
+                        <div class="food-details">
+                            <span class="serving">Serves 1-2</span>
+                            <span class="price">€13.90</span>
+                        </div>
+                        <div class="food-options">
+                            <p class="swallow-options">With: Pounded Yam | Fufu | Semo (+€2)</p>
+                        </div>
+                        <button class="add-to-cart" onclick="orderItem('Okro Soup', '€13.90')">
+                            <i class="fas fa-shopping-cart"></i> Order
+                        </button>
+                    </div>
+                </div>
+
+                <div class="food-item" data-category="soups">
+                    <div class="food-image">
+                        <img src="images/ewedu.jpg" alt="Ewedu">
+                    </div>
+                    <div class="food-info">
+                        <h3>Ewedu & Gbegiri</h3>
+                        <p>Classic Yoruba combination with amala or eba</p>
+                        <div class="food-details">
+                            <span class="serving">Serves 1-2</span>
+                            <span class="price">€12.90</span>
+                        </div>
+                        <div class="food-options">
+                            <p class="swallow-options">With: Amala | Eba (+€2)</p>
+                        </div>
+                        <button class="add-to-cart" onclick="orderItem('Ewedu & Gbegiri', '€12.90')">
+                            <i class="fas fa-shopping-cart"></i> Order
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Rice Dishes -->
+                <div class="food-item" data-category="rice">
+                    <div class="food-image">
+                        <img src="images/jollof.jpg" alt="Jollof Rice">
+                        <span class="food-badge">Bestseller</span>
+                    </div>
+                    <div class="food-info">
+                        <h3>Nigerian Jollof Rice</h3>
+                        <p>Party-style jollof rice with fried plantains, coleslaw, and moin moin</p>
+                        <div class="food-details">
+                            <span class="serving">Serves 1</span>
+                            <span class="price">€12.90</span>
+                        </div>
+                        <div class="food-options">
+                            <p>Add Chicken +€4 | Beef +€4.50 | Fish +€5</p>
+                        </div>
+                        <button class="add-to-cart" onclick="orderItem('Jollof Rice', '€12.90')">
+                            <i class="fas fa-shopping-cart"></i> Order
+                        </button>
+                    </div>
+                </div>
+
+                <div class="food-item" data-category="rice">
+                    <div class="food-image">
+                        <img src="images/fried-rice.jpg" alt="Fried Rice">
+                    </div>
+                    <div class="food-info">
+                        <h3>Nigerian Fried Rice</h3>
+                        <p>Colorful fried rice with vegetables, liver, and mixed spices</p>
+                        <div class="food-details">
+                            <span class="serving">Serves 1</span>
+                            <span class="price">€12.90</span>
+                        </div>
+                        <div class="food-options">
+                            <p>Add Chicken +€4 | Beef +€4.50 | Fish +€5</p>
+                        </div>
+                        <button class="add-to-cart" onclick="orderItem('Fried Rice', '€12.90')">
+                            <i class="fas fa-shopping-cart"></i> Order
+                        </button>
+                    </div>
+                </div>
+
+                <div class="food-item" data-category="rice">
+                    <div class="food-image">
+                        <img src="images/ofada.jpg" alt="Ofada Rice">
+                    </div>
+                    <div class="food-info">
+                        <h3>Ofada Rice</h3>
+                        <p>Local ofada rice with Ayamase (ofada stew) and boiled eggs</p>
+                        <div class="food-details">
+                            <span class="serving">Serves 1</span>
+                            <span class="price">€14.90</span>
+                        </div>
+                        <div class="food-options">
+                            <p>Includes 2 boiled eggs and assorted meat</p>
+                        </div>
+                        <button class="add-to-cart" onclick="orderItem('Ofada Rice', '€14.90')">
+                            <i class="fas fa-shopping-cart"></i> Order
+                        </button>
+                    </div>
+                </div>
+
+                <div class="food-item" data-category="rice">
+                    <div class="food-image">
+                        <img src="images/coconut-rice.jpg" alt="Coconut Rice">
+                    </div>
+                    <div class="food-info">
+                        <h3>Coconut Rice</h3>
+                        <p>Fragrant rice cooked in coconut milk with spices</p>
+                        <div class="food-details">
+                            <span class="serving">Serves 1</span>
+                            <span class="price">€11.90</span>
+                        </div>
+                        <div class="food-options">
+                            <p>Add Chicken +€4 | Shrimps +€6</p>
+                        </div>
+                        <button class="add-to-cart" onclick="orderItem('Coconut Rice', '€11.90')">
+                            <i class="fas fa-shopping-cart"></i> Order
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Proteins -->
+                <div class="food-item" data-category="protein">
+                    <div class="food-image">
+                        <img src="images/suya.jpg" alt="Suya">
+                        <span class="food-badge">Spicy</span>
+                    </div>
+                    <div class="food-info">
+                        <h3>Beef Suya</h3>
+                        <p>Spicy grilled beef skewers with yaji, onions, and tomatoes</p>
+                        <div class="food-details">
+                            <span class="serving">Per skewer</span>
+                            <span class="price">€4.50</span>
+                        </div>
+                        <div class="food-options">
+                            <p>Available in: Medium | Hot | Extra Hot</p>
+                        </div>
+                        <button class="add-to-cart" onclick="orderItem('Beef Suya', '€4.50')">
+                            <i class="fas fa-shopping-cart"></i> Order
+                        </button>
+                    </div>
+                </div>
+
+                <div class="food-item" data-category="protein">
+                    <div class="food-image">
+                        <img src="images/chicken-suya.jpg" alt="Chicken Suya">
+                    </div>
+                    <div class="food-info">
+                        <h3>Chicken Suya</h3>
+                        <p>Spicy grilled chicken skewers with special suya spice</p>
+                        <div class="food-details">
+                            <span class="serving">Per skewer</span>
+                            <span class="price">€4.00</span>
+                        </div>
+                        <button class="add-to-cart" onclick="orderItem('Chicken Suya', '€4.00')">
+                            <i class="fas fa-shopping-cart"></i> Order
+                        </button>
+                    </div>
+                </div>
+
+                <div class="food-item" data-category="protein">
+                    <div class="food-image">
+                        <img src="images/pepper-soup.jpg" alt="Pepper Soup">
+                    </div>
+                    <div class="food-info">
+                        <h3>Catfish Pepper Soup</h3>
+                        <p>Spicy catfish soup with herbs and traditional spices</p>
+                        <div class="food-details">
+                            <span class="serving">Bowl</span>
+                            <span class="price">€11.90</span>
+                        </div>
+                        <button class="add-to-cart" onclick="orderItem('Catfish Pepper Soup', '€11.90')">
+                            <i class="fas fa-shopping-cart"></i> Order
+                        </button>
+                    </div>
+                </div>
+
+                <div class="food-item" data-category="protein">
+                    <div class="food-image">
+                        <img src="images/goat-meat.jpg" alt="Goat Meat">
+                    </div>
+                    <div class="food-info">
+                        <h3>Goat Meat Pepper Soup</h3>
+                        <p>Tender goat meat in spicy pepper soup broth</p>
+                        <div class="food-details">
+                            <span class="serving">Bowl</span>
+                            <span class="price">€12.90</span>
+                        </div>
+                        <button class="add-to-cart" onclick="orderItem('Goat Meat Pepper Soup', '€12.90')">
+                            <i class="fas fa-shopping-cart"></i> Order
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Small Chops -->
+                <div class="food-item" data-category="snacks">
+                    <div class="food-image">
+                        <img src="images/samosas.jpg" alt="Samosas">
+                    </div>
+                    <div class="food-info">
+                        <h3>Samosas</h3>
+                        <p>Crispy pastry filled with spiced minced meat (6 pieces)</p>
+                        <div class="food-details">
+                            <span class="serving">6 pieces</span>
+                            <span class="price">€6.90</span>
+                        </div>
+                        <button class="add-to-cart" onclick="orderItem('Samosas', '€6.90')">
+                            <i class="fas fa-shopping-cart"></i> Order
+                        </button>
+                    </div>
+                </div>
+
+                <div class="food-item" data-category="snacks">
+                    <div class="food-image">
+                        <img src="images/spring-rolls.jpg" alt="Spring Rolls">
+                    </div>
+                    <div class="food-info">
+                        <h3>Spring Rolls</h3>
+                        <p>Vegetable spring rolls with Nigerian spices (4 pieces)</p>
+                        <div class="food-details">
+                            <span class="serving">4 pieces</span>
+                            <span class="price">€5.90</span>
+                        </div>
+                        <button class="add-to-cart" onclick="orderItem('Spring Rolls', '€5.90')">
+                            <i class="fas fa-shopping-cart"></i> Order
+                        </button>
+                    </div>
+                </div>
+
+                <div class="food-item" data-category="snacks">
+                    <div class="food-image">
+                        <img src="images/puff-puff.jpg" alt="Puff Puff">
+                    </div>
+                    <div class="food-info">
+                        <h3>Puff Puff</h3>
+                        <p>Sweet fried dough balls (8 pieces)</p>
+                        <div class="food-details">
+                            <span class="serving">8 pieces</span>
+                            <span class="price">€4.90</span>
+                        </div>
+                        <button class="add-to-cart" onclick="orderItem('Puff Puff', '€4.90')">
+                            <i class="fas fa-shopping-cart"></i> Order
+                        </button>
+                    </div>
+                </div>
+
+                <div class="food-item" data-category="snacks">
+                    <div class="food-image">
+                        <img src="images/plantain-chips.jpg" alt="Plantain Chips">
+                    </div>
+                    <div class="food-info">
+                        <h3>Plantain Chips</h3>
+                        <p>Crispy fried plantain chips with pepper seasoning</p>
+                        <div class="food-details">
+                            <span class="serving">200g</span>
+                            <span class="price">€3.90</span>
+                        </div>
+                        <button class="add-to-cart" onclick="orderItem('Plantain Chips', '€3.90')">
+                            <i class="fas fa-shopping-cart"></i> Order
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hair Section -->
+    <section id="hair" class="hair-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Premium <span>Hair & Wigs</span></h2>
+                <p>High-quality human hair wigs and extensions</p>
+            </div>
+
+            <div class="hair-grid">
+                <div class="hair-item">
+                    <div class="hair-image">
+                        <img src="images/lace-front.jpg" alt="Lace Front Wig">
+                        <span class="hair-badge">New</span>
+                    </div>
+                    <div class="hair-info">
+                        <h3>HD Lace Front Wig</h3>
+                        <p class="hair-desc">Brazilian virgin human hair, 13x4 lace frontal</p>
+                        <ul class="hair-specs">
+                            <li><i class="fas fa-check"></i> 100% Human Hair</li>
+                            <li><i class="fas fa-check"></i> 200% Density</li>
+                            <li><i class="fas fa-check"></i> Pre-plucked</li>
+                            <li><i class="fas fa-check"></i> Length: 20-26 inch</li>
+                        </ul>
+                        <div class="hair-price">
+                            <span class="current-price">€149 - €249</span>
+                        </div>
+                        <button class="hair-order-btn" onclick="orderItem('HD Lace Front Wig', '€149-€249')">
+                            <i class="fas fa-shopping-cart"></i> Inquire
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hair-item">
+                    <div class="hair-image">
+                        <img src="images/braid-wig.jpg" alt="Braid Wig">
+                        <span class="hair-badge">Popular</span>
+                    </div>
+                    <div class="hair-info">
+                        <h3>Goddess Braid Wig</h3>
+                        <p class="hair-desc">Handmade knotless braid wig with baby hair</p>
+                        <ul class="hair-specs">
+                            <li><i class="fas fa-check"></i> Ready to wear</li>
+                            <li><i class="fas fa-check"></i> Adjustable straps</li>
+                            <li><i class="fas fa-check"></i> Breathable cap</li>
+                            <li><i class="fas fa-check"></i> Medium length</li>
+                        </ul>
+                        <div class="hair-price">
+                            <span class="current-price">€89 - €139</span>
+                        </div>
+                        <button class="hair-order-btn" onclick="orderItem('Goddess Braid Wig', '€89-€139')">
+                            <i class="fas fa-shopping-cart"></i> Inquire
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hair-item">
+                    <div class="hair-image">
+                        <img src="images/faux-locs.jpg" alt="Faux Locs">
+                    </div>
+                    <div class="hair-info">
+                        <h3>Faux Locs Wig</h3>
+                        <p class="hair-desc">Bohemian faux locs with curly ends</p>
+                        <ul class="hair-specs">
+                            <li><i class="fas fa-check"></i> Lightweight</li>
+                            <li><i class="fas fa-check"></i> Distressed look</li>
+                            <li><i class="fas fa-check"></i> Various colors</li>
+                            <li><i class="fas fa-check"></i> Natural finish</li>
+                        </ul>
+                        <div class="hair-price">
+                            <span class="current-price">€109 - €159</span>
+                        </div>
+                        <button class="hair-order-btn" onclick="orderItem('Faux Locs Wig', '€109-€159')">
+                            <i class="fas fa-shopping-cart"></i> Inquire
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hair-item">
+                    <div class="hair-image">
+                        <img src="images/virgin-bundles.jpg" alt="Virgin Hair Bundles">
+                        <span class="hair-badge">Best Seller</span>
+                    </div>
+                    <div class="hair-info">
+                        <h3>Virgin Hair Bundles</h3>
+                        <p class="hair-desc">Brazilian/Malaysian virgin hair (3-4 bundles)</p>
+                        <ul class="hair-specs">
+                            <li><i class="fas fa-check"></i> Tangle-free</li>
+                            <li><i class="fas fa-check"></i> Can be dyed</li>
+                            <li><i class="fas fa-check"></i> Natural shine</li>
+                            <li><i class="fas fa-check"></i> Long lasting</li>
+                        </ul>
+                        <div class="hair-price">
+                            <span class="current-price">€129 - €199</span>
+                        </div>
+                        <button class="hair-order-btn" onclick="orderItem('Virgin Hair Bundles', '€129-€199')">
+                            <i class="fas fa-shopping-cart"></i> Inquire
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hair-item">
+                    <div class="hair-image">
+                        <img src="images/frontal.jpg" alt="Lace Frontal">
+                    </div>
+                    <div class="hair-info">
+                        <h3>13x4 Lace Frontal</h3>
+                        <p class="hair-desc">HD transparent lace with baby hair</p>
+                        <ul class="hair-specs">
+                            <li><i class="fas fa-check"></i> Pre-plucked</li>
+                            <li><i class="fas fa-check"></i> Bleached knots</li>
+                            <li><i class="fas fa-check"></i> Undetectable</li>
+                            <li><i class="fas fa-check"></i> All textures</li>
+                        </ul>
+                        <div class="hair-price">
+                            <span class="current-price">€59 - €89</span>
+                        </div>
+                        <button class="hair-order-btn" onclick="orderItem('Lace Frontal', '€59-€89')">
+                            <i class="fas fa-shopping-cart"></i> Inquire
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hair-item">
+                    <div class="hair-image">
+                        <img src="images/closure.jpg" alt="Silk Closure">
+                    </div>
+                    <div class="hair-info">
+                        <h3>Silk Base Closure</h3>
+                        <p class="hair-desc">4x4 or 5x5 silk base with natural hairline</p>
+                        <ul class="hair-specs">
+                            <li><i class="fas fa-check"></i> Realistic scalp</li>
+                            <li><i class="fas fa-check"></i> Versatile parting</li>
+                            <li><i class="fas fa-check"></i> No shedding</li>
+                            <li><i class="fas fa-check"></i> Ready to wear</li>
+                        </ul>
+                        <div class="hair-price">
+                            <span class="current-price">€49 - €79</span>
+                        </div>
+                        <button class="hair-order-btn" onclick="orderItem('Silk Base Closure', '€49-€79')">
+                            <i class="fas fa-shopping-cart"></i> Inquire
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hair-item">
+                    <div class="hair-image">
+                        <img src="images/360-wig.jpg" alt="360 Wig">
+                    </div>
+                    <div class="hair-info">
+                        <h3>360 Lace Front Wig</h3>
+                        <p class="hair-desc">Full lace wig with 360° parting space</p>
+                        <ul class="hair-specs">
+                            <li><i class="fas fa-check"></i> Versatile styling</li>
+                            <li><i class="fas fa-check"></i> High definition</li>
+                            <li><i class="fas fa-check"></i> Natural hairline</li>
+                            <li><i class="fas fa-check"></i> All around lace</li>
+                        </ul>
+                        <div class="hair-price">
+                            <span class="current-price">€179 - €279</span>
+                        </div>
+                        <button class="hair-order-btn" onclick="orderItem('360 Lace Front Wig', '€179-€279')">
+                            <i class="fas fa-shopping-cart"></i> Inquire
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hair-item">
+                    <div class="hair-image">
+                        <img src="images/curly-wig.jpg" alt="Curly Wig">
+                    </div>
+                    <div class="hair-info">
+                        <h3>Deep Curly Wig</h3>
+                        <p class="hair-desc">Premium deep wave curly human hair wig</p>
+                        <ul class="hair-specs">
+                            <li><i class="fas fa-check"></i> Defined curls</li>
+                            <li><i class="fas fa-check"></i> Volume 180%</li>
+                            <li><i class="fas fa-check"></i> Minimal shedding</li>
+                            <li><i class="fas fa-check"></i> Various lengths</li>
+                        </ul>
+                        <div class="hair-price">
+                            <span class="current-price">€139 - €219</span>
+                        </div>
+                        <button class="hair-order-btn" onclick="orderItem('Deep Curly Wig', '€139-€219')">
+                            <i class="fas fa-shopping-cart"></i> Inquire
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About <span>Tsquare.o</span></h2>
+                    <p class="about-subtitle">Bringing Nigeria to Vienna, one meal and hairstyle at a time</p>
+                    <div class="about-description">
+                        <p>Welcome to Tsquare.o, your number one destination for authentic Nigerian cuisine and premium hair extensions in Vienna, Austria. Founded with a passion for sharing our rich culture, we've been serving the community since 2020.</p>
+                        <p>Our food is prepared with love, using traditional recipes and the finest ingredients to bring you the true taste of Nigeria. From our party jollof rice to our rich egusi soup, every dish tells a story of home.</p>
+                        <p>In our hair collection, we offer only the highest quality human hair wigs and extensions. Whether you're looking for a lace front wig, braid wigs, or virgin hair bundles, we've got you covered with products that make you feel confident and beautiful.</p>
+                    </div>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>100% Halal Certified</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Fresh ingredients daily</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Premium quality hair</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Fast delivery Vienna</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/about-us.jpg" alt="Tsquare.o Team">
+                    <div class="about-experience">
+                        <span class="years">4+</span>
+                        <span class="text">Years of Service in Vienna</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In <span>Touch</span></h2>
+                <p>We'd love to hear from you. Order or inquire today!</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>📍 Visit Us</h3>
+                        <p>Tsquare.o<br>Mariahilfer Straße 123<br>1060 Vienna, Austria</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>📞 Call / WhatsApp</h3>
+                        <p>Phone: +43 660 123456789<br>
+                        WhatsApp: +43 660 123456789</p>
+                        <a href="https://wa.me/43660123456789" class="whatsapp-link" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>✉️ Email</h3>
+                        <p>info@tsquareo.at<br>
+                        orders@tsquareo.at</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>🕐 Opening Hours</h3>
+                        <p>
+                            <strong>Food Orders:</strong><br>
+                            Mon-Fri: 11:00 - 21:00<br>
+                            Sat: 12:00 - 22:00<br>
+                            Sun: 13:00 - 20:00
+                        </p>
+                        <p>
+                            <strong>Hair Shop:</strong><br>
+                            Mon-Sat: 10:00 - 19:00<br>
+                            Sunday: Closed
+                        </p>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>📱 Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone/WhatsApp *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interest">I'm interested in *</label>
+                            <select id="interest" name="interest" required>
+                                <option value="">Select an option</option>
+                                <option value="food">Nigerian Food</option>
+                                <option value="hair">Wigs & Hair</option>
+                                <option value="both">Both Food & Hair</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message / Order *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="whatsapp_consent" checked>
+                                I prefer to be contacted on WhatsApp
+                            </label>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+
+                    <div class="delivery-note">
+                        <i class="fas fa-info-circle"></i>
+                        <p><strong>Delivery Info:</strong> Free delivery within Vienna for orders over €30. Delivery within 60-90 minutes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <iframe src="https://www.google.com/maps/place/tsquare.o/@48.2079863,16.3201185,25823m/data=!3m1!1e3!4m10!1m2!2m1!1safrican+restaurant+near+me!3m6!1s0x476d013054b45111:0xd88d7caccf135e61!8m2!3d48.2418201!4d16.4805677!15sChphZnJpY2FuIHJlc3RhdXJhbnQgbmVhciBtZSIDkAEBWhwiGmFmcmljYW4gcmVzdGF1cmFudCBuZWFyIG1lkgESYWZyaWNhbl9yZXN0YXVyYW504AEA!16s%2Fg%2F11mm02vd4t?entry=ttu&g_ep=EgoyMDI2MDIxNy4wIKXMDSoASAFQAw%3D%3D" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+        </iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tsquare<span>.o</span></h3>
+                    <p>Your authentic Nigerian food and hair attchment in Vienna, Austria.</p>
+                    <div class="footer-flags">
+                        <span>🇳🇬 Nigeria</span>
+                        <span>🇦🇹 Austria</span>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#food">Food Menu</a></li>
+                        <li><a href="#hair">Hair Collection</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 1220 Vienna, Austria</li>
+                        <li><i class="fas fa-phone"></i> +43 688 64163467</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tsquare.o - All Rights Reserved. Vienna, Austria</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+</body>
+</html>
